@@ -1,0 +1,106 @@
+/* AuthForm.css */
+.auth-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.auth-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container label {
+    margin-bottom: 10px;
+    color: #555;
+    font-weight: 600;
+}
+
+.auth-container input[type="text"],
+.auth-container input[type="email"],
+.auth-container input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.auth-container input[type="text"]:focus,
+.auth-container input[type="email"]:focus,
+.auth-container input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.auth-container button[type="submit"] {
+    padding: 10px 15px;
+    margin: 10px 0;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.auth-container button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.auth-container p {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+.auth-container p button {
+    background: none;
+    color: #007bff;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0;
+}
+
+.auth-container p button:hover {
+    color: #0056b3;
+}
+
+.auth-container p.error {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+}
+.center {
+    text-align: center;
+}
+
+.btn {
+    background-color: #1eb2a6;
+    color: white;
+    font-size: 15px;
+}
+
+.btnlayout {
+    text-align: center;
+
+}
+
+

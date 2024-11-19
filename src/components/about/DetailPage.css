@@ -1,0 +1,52 @@
+.detailContainer ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+  }
+  
+  .detailContainer h3 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  .detailContainer p,
+  .detailContainer li {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+
+/* DetailPage.css */
+
+.detailContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .detailContainer img {
+    width: 80px;
+    height: 80px;
+    margin: 20px 0;
+  }
+  
+  .detailContainer h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .detailContainer p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }

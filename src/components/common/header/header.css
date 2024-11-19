@@ -1,0 +1,171 @@
+
+/*--------head------------*/
+.logo {
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.logo h1 {
+  font-size: 2rem;
+  color: #333; /* Original color for the main heading */
+  transition: color 0.3s ease;
+}
+
+.logo span {
+  font-size: 1rem;
+  color: #666; /* Original color for the subtitle */
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.logo:hover h1 {
+  color: #007BFF; /* New color on hover for the main heading */
+}
+
+.logo:hover span {
+  color: #555; /* New color on hover for the subtitle */
+}
+
+.head {
+  padding: 20px 0;
+  color: black;
+}
+.logo h1 {
+  font-size: 35px;
+  font-weight: 900;
+}
+
+.head .search-bar {
+  display: flex;
+  align-items: center;
+  margin-right: 100px;
+  width: 100%; /* Adjust width as per design */
+  max-width: 350px; /* Set max-width to control size */
+}
+
+.head .search-bar form {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.head .search-bar form:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow on hover */
+  border-color: black; /* Border color change on hover */
+}
+
+.head .search-bar input {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.head .search-bar input::placeholder {
+  color: #aaa;
+  transition: color 0.3s ease;
+}
+
+.head .search-bar input:focus {
+  background-color: #f0f8ff; /* Light background on focus */
+  color: black; /* Text color on focus */
+}
+
+.head .search-bar input:hover::placeholder {
+  color: #666; /* Darker placeholder on hover */
+}
+
+.social {
+  display: flex;
+  gap: 8px; /* Space between icons */
+}
+
+.social .icon {
+  font-size: 1.5rem; /* Adjust icon size */
+  color: #555; /* Default icon color */
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.social .icon:hover {
+  color: #007BFF; /* Change color on hover */
+  transform: scale(1.2); /* Slightly increase size on hover */
+}
+
+/*--------head------------*/
+/*--------header------------*/
+header {
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 30px;
+}
+header .nav {
+  display: flex !important;
+}
+header li {
+  margin-right: 40px;
+}
+header ul {
+  padding: 30px 20px;
+}
+header ul li a {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+header ul li a:hover {
+  color: #1eb2a6;
+}
+.start {
+  background-color: #1eb2a6;
+  padding: 30px 70px;
+  color: black;
+  clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0% 100%);
+}
+.toggle {
+  display: none;
+}
+/*--------header------------*/
+@media screen and (max-width: 768px) {
+  .start {
+    clip-path: none;
+  }
+  header {
+    margin: 0;
+    background-color: #1eb2a6;
+    position: relative;
+  }
+  header ul.flexSB {
+    display: none;
+  }
+  header ul li {
+    margin-bottom: 20px;
+  }
+  .toggle {
+    display: block;
+    background: none;
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+    top: -20px;
+  }
+  .mobile-nav {
+    position: absolute;
+    top: 7vh;
+    left: 0;
+    width: 100%;
+    background-color: #1eb2a6;
+  }
+}
